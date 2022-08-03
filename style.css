@@ -1,23 +1,25 @@
-:root {
-  /* primary */
-  --p-purple: hsla(276, 60%, 61%, 1);
-  --p-white: rgb(246, 234, 248);
-  /* neutral */
-  --n-dk-purple: hsla(246, 38%, 16%, 1);
-  --n-gray: rgb(159, 158, 182);
-  --n-bg: hsla(233, 46%, 7%, 1);
-}
-
 * {
   margin: 0;
   padding: 0;
-  text-decoration: 0;
   box-sizing: border-box;
-  
 }
 
-img {
-  display: block;
-  line-height: 0;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  height: 100%;
 }
 
+.container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-text {
+  background-color: hsl(244, 38%, 16%);
+}
